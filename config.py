@@ -182,10 +182,12 @@ def gen_args():
 
 
     # path to data
-    args.dataf = 'data/' + args.dataf + '_' + args.env
+    #args.dataf = 'data/' + args.dataf + '_' + args.env
+    args.dataf = '/scratch/gobi3/ashokdha/cleanvcdndata/data_'+ args.env
 
     # path to train
-    dump_prefix = 'dump_{}/'.format(args.env)
+    #dump_prefix = 'dump_{}/'.format(args.env)
+    dump_prefix = '/scratch/gobi3/ashokdha/cleanvcdndata/dump_{}/'.format(args.env)
 
     args.outf_kp = dump_prefix + args.outf
     args.outf_kp += '_' + args.env + '_kp'
